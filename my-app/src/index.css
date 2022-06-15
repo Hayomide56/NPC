@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-bg: #d3d3d3;
+    --color-text-light: rgba (103, 240, 140, 0.4);
+    --color-bg-variant: rgba (70, 74, 72);
+    --color-primary: #15ad61;
+    --color-white: #fff;
+
+    --transition: all 400ms ease;
+
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.7;
+}
+
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+section {
+    margin-top: 8rem;
+}
+a {
+    text-decoration: none;
+    color: var(--color-bg-variant);
+}
+.btn {
+    width: max-content;
+    color: var(--color-primary);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+.btn:hover {
+    background: var(--color-white);
+    border-color: transparent;
+}
+
+/*-----MEDIA QUERIES (MEDIUM DEVICES) --------- */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+    section {
+        margin-top: 6rem;
+    }
+}
+
+
+
+/*-----MEDIA QUERIES (SMALL DEVICES) --------- */
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+    section > h2 {
+        margin-bottom: 2rem;
+    }
+}
